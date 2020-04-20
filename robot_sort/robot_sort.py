@@ -14,6 +14,8 @@ class SortingRobot:
         Returns True if the robot can move right or False if it's
         at the end of the list.
         """
+        
+        
         return self._position < len(self._list) - 1
 
     def can_move_left(self):

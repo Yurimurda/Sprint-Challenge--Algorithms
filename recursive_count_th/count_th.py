@@ -6,8 +6,8 @@ Your function must utilize recursion. It cannot contain any loops.
 
 def count_th(word):
     
-    # The length of the word is 0 or less than 2 characters
-    # (in this case 'th'), count_th returns 0
+    # If the length of the word is 0 or less than 2 characters,
+    # count_th should return 0
     if len(word) == 0:
         return 0
 

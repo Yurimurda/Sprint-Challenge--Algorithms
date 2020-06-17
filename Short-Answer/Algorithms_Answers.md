@@ -19,10 +19,33 @@ a) 'while (a < n * n * n):'
     The runtime is O(n) by Iteration 
 
 
-b)
+b)'sum = 0'
+  'for i in range(n):'
+    i in the range of 2
 
+    'j = 1'
+      'while j < n:'
+    1 < 2
 
-c)
+    'j *= 2'
+     j = j * 2
+     j = 2
+
+        'sum += 1'
+        0 = 0 + 1
+        sum = 1
+
+    I'm unsure on this one but i'll say O(n), x in s
+
+c) In this case, bunnies will = 5
+
+    'def bunnyEars(bunnies):'
+      'if bunnies == 0:'
+        'return 0'
+    Bunnies will return 0
+
+      'return 2 + bunnyEars' 
+        '(bunnies-1)
 
 ## Exercise II
 

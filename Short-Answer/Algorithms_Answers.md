@@ -42,11 +42,18 @@ c) In this case, bunnies will = 5
     'def bunnyEars(bunnies):'
       'if bunnies == 0:'
         'return 0'
-    Bunnies will return 0
+    Bunnies will return 0 if the value is zero, in this case it doesn't.
 
       'return 2 + bunnyEars' 
+      bunnyEars will hold an intrinsic value of 2 for
+      each instance of bunnies
+
         '(bunnies-1)
+        The value of bunnies is reduced by 1,
+        resulting in 4 bunnies, meaning 8 bunnyEars
 
 ## Exercise II
 
+def building (n, f):
 
+  if n 

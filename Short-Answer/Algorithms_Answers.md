@@ -52,6 +52,8 @@ c) In this case, bunnies will = 5
         The value of bunnies is reduced by 1,
         resulting in 4 bunnies, meaning 8 bunnyEars
 
+        Runtime is O(1)
+
 ## Exercise II
 
 
@@ -60,6 +62,8 @@ c) In this case, bunnies will = 5
 
 The algorithm iterates from 1 through N. If The number is below F, it returns False and
 moves to the next greatest number. This process is repeated until F is met and returns 
-True. The algorithm ends by returning the number of number of floors the egg never broke from and the ones that did out of the total number of floors. 
+True. For every False iteration, a number is added to an empty array called 'Y'. The algorithm ends by returning the number of number of floors the egg never broke from (Y)and the ones that did out of the total number of floors (Y - N). 
+
+The runtime would be Θ(n)
 
 

@@ -106,27 +106,46 @@ class SortingRobot:
 
         # While the light is on, the selector is allowed to move right
         while self.light_is_on():
-            self.can_move_right()
+            self.set_light_off()
         # As long as the selector can move right, it does so. It is then compared to the number on it's right.
-        # If the value is lesser, It is swapped.
+        # If the value is lesser, It is swapped. The selector then moves on to the next number.
             while self.can_move_right(): 
+                self.swap_item()
                 self.move_right()
-
-                if self.compare_item() != 1:
+                
+        # The current selected number is compared. 
+        # If greater, the light_is_on triggers and 'while self.can_move_right' swaps with the number to the right and then selects it.
+                if self.compare_item() == 1:
+                    self.set_light_on()
+                    self.swap_item()
+                    self.move_left()
                     self.swap_item()
                     self.move_right()
 
+                else:
+                    self.move_left()
+                    self.swap_item()
+                    self.move_right()
+
+                
+        # The same applies going left, only in reverse 
             while self.can_move_left(): 
+                self.swap_item()
                 self.move_left()
 
-                if self.compare_item() == 1:
+                if self.compare_item() == -1:
+                    self.set_light_on()
                     self.swap_item()
+                    self.move_right()
+                    self.swap_item()
+                    self.move_left()
 
-        if self.can_move_right():
-            self.move_right()
+                else:
+                    self.move_right()
+                    self.swap_item()
+                    self.move_left()
 
-        else:
-            self.set_light_off()
+
 
 
 if __name__ == "__main__":

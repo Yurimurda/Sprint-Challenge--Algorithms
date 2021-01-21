@@ -121,6 +121,7 @@ class SortingRobot:
                     self.move_left()
                     self.swap_item()
                     self.move_right()
+                    ;dlgmdflkgmdl;kgjl;gk
 
                 else:
                     self.move_left()
